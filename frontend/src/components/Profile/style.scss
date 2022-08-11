@@ -1,0 +1,40 @@
+.profile-container{
+    width: 100%;
+    padding: 1rem 15%;
+
+    font-size: 0.75rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: var(--color-white);
+    background-color: var(--color-profile);
+
+    div:first-child{
+        span:last-child{
+            font-size: 0.6rem;
+        }
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+
+        span:nth-child(1) {
+            color: #00ff00;
+        }
+
+        span:nth-child(1n) {
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        span:first-child{
+            font-size: 0.6rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    }
+}
