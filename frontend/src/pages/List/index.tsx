@@ -48,6 +48,10 @@ const List = () => {
                             <td>{item.type}</td>
                         </tr>
                     ))}
+
+                    {list?.length == 0 && (
+                        <td colSpan={4} className="label-align">Não há dados cadastrados.</td>
+                    )} 
                 </table>
             </section>
         </>

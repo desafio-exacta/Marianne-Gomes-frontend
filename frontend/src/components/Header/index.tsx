@@ -15,7 +15,7 @@ const Header = () => {
 
     return(
         <header className="header-container">
-            <h1 onClick={() => SendTo("/")}>Exactaworks</h1>
+            <h1 onClick={() => SendTo("/")}>Bank Loan</h1>
             <ul>
                 {optionsHeader.map((item) => (
                     <li onClick={() => SendTo(item.href)} key={item.id}>{item.title}</li>

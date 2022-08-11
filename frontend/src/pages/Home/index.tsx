@@ -66,7 +66,7 @@ const Home = () => {
                         </div>
                         <div className="form-group">
                             <label>* Data de emissão:</label>
-                            <input type="text" onChange={(e) => setPersonalData({...personalData, issueDate: e.target.value})}/>
+                            <input type="date" onChange={(e) => setPersonalData({...personalData, issueDate: e.target.value})}/>
                         </div>
                         <div className="form-group">
                             <label>* Órgão expedidor:</label>
