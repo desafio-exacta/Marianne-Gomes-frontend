@@ -1,2 +1,2 @@
-# exactaworks-challenge
-Application developed for the second stage of the exactaworks selection process 
+# bank-loan
+Application developed to simulate bank loan requests 🏦
