@@ -71,7 +71,7 @@ const Home = () => {
                         <div className="form-group">
                             <label>* Órgão expedidor:</label>
                             <select onChange={(e) => setPersonalData({...personalData, issuingAgency: e.target.value})}>
-                                <option>Selecione um órgão expedidor</option>
+                                <option>Selecione uma opção</option>
                                 {issuingAgency?.map((item) => (
                                     <option>{item.value} - {item.label}</option>
                                 ))}
