@@ -20,6 +20,8 @@ body{
     width: 100%;
     height: 100vh;
     overflow: hidden;
+
+    background-color: #f9f9f9;
 }
 
 body, input, select, button {
@@ -29,6 +31,10 @@ body, input, select, button {
 
     letter-spacing: 0.5px;
     -webkit-font-smoothing: antialiased;
+}
+
+input, select{
+    background-color: var(--color-white);
 }
 
 ul{
