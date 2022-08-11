@@ -7,7 +7,7 @@ Application developed to simulate bank loan requests (Register personal data)ğŸ
 
 #### Interface: 
 
-![image](https://user-images.githubusercontent.com/66935004/184181475-ed207d93-06cd-4186-905a-735771f16e4c.png)
+![image](https://user-images.githubusercontent.com/66935004/184182633-c8d971b2-6b9f-45fd-829f-214859e30030.png)
 
 ## 
 
