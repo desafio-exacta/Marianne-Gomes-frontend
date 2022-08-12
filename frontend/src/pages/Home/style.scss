@@ -37,6 +37,11 @@
         .form-group{
             margin-bottom: 1rem;
 
+            input:focus, select:focus{
+                color: var(--color-border);
+                outline-color: var(--color-border);
+            }
+
             label{
                 font-size: 0.78rem;
             }
@@ -59,7 +64,7 @@
                     font-weight: 500;
                     font-size: 0.8rem;
                     
-                    color: var(--color-profile);
+                    color: #4479bb;
                     background-color: var(--color-white);
                     border: 2px solid var(--color-border);
                 }
@@ -79,6 +84,13 @@
 
             color: var(--color-white);
             background-color: var(--color-profile);
+        }
+
+        .button-next:disabled{
+            cursor: not-allowed;
+
+            color: #959595;
+            background-color: #11206a21;
         }
     }
 }

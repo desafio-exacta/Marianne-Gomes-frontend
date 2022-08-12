@@ -27,12 +27,20 @@ const Home = () => {
     const [personalData, setPersonalData] = useState<PersonalData>();
     const [issuingAgency, setIssuingAgency] = useState<IssuingAgency []>(); 
 
+    const [disabled, setDisabled] = useState(false);
+
     const NextStage = async(e: any) => {
         e.preventDefault();
 
-        if(personalData){
+        if(personalData?.rg && personalData?.issueDate && personalData?.issuingAgency && personalData?.type){
+            setDisabled(false);
+
             await HomeServices.SavedPersonalData(personalData);
             toast.success('Informações salvas com sucesso!');
+        }
+        else{
+            setDisabled(true);
+            toast.error("Por favor, preencha todos os campos.")
         }
     }
 
@@ -50,6 +58,12 @@ const Home = () => {
     useEffect(() => {
         ListIssuingAgency();
     }, [])
+
+    useEffect(() => {
+        if(personalData?.rg && personalData?.issueDate && personalData?.issuingAgency && personalData?.type){
+            setDisabled(false);
+        }
+    }, [personalData])
 
     return(
         <>
@@ -85,10 +99,10 @@ const Home = () => {
                             <button onClick={(e) => OptionSelected(e, "Feminino")}>Feminino</button>
                         </div>
                     </div>
-                    <button className="button-next" onClick={(e) => NextStage(e)}>Continuar</button>
+                    <button className="button-next" disabled={disabled} onClick={(e) => NextStage(e)}>Continuar</button>
                 </form>
             </section>
-            <Toaster position="top-center" reverseOrder={false}/>
+            <Toaster position="top-right" reverseOrder={false}/>
         </>
     )
 }

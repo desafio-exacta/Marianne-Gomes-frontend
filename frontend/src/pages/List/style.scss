@@ -9,6 +9,7 @@
             height: 3rem;
 
             box-shadow: 1px 1px 2px #c7c7c7;
+            background-color: var(--color-white);
         }
 
         tr{
@@ -21,13 +22,14 @@
             }
 
         }
+
         .label-align{
             padding: 1rem 0;
 
             font-weight: 500;
             text-align: center;
 
-            color: grey;
+            color: #808080;
         }
     }
 }
